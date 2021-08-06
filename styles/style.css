@@ -1,6 +1,188 @@
-/* poppins font */
+/* font poppins  400*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* common styles */
-body{
+/* common styles  */
+.body{
     font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    /* width: 1440px; */
+}
+ /* .container{
+    
+     width: 1440px; 
+     height: 677px; 
+}  */
+/* top banner style */
+/* .container{
+    margin-bottom: 70px;
+} */
+.top-banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 102px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    background-color: rgba(0, 0, 255, 0.733);
+    background-size: 100%;
+    margin-bottom: 70px;
+
+}
+.banner-details{
+    margin-left: 156px;
+    margin-top: 195px;
+}
+.banner-title{
+    color: #FFFFFF;
+    font-size: 64px;
+    /* font-weight: 700; */
+}
+.banner-link{
+    display: flex;
+    align-items: center;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    width: 168px;
+    height: 44px;
+    margin-bottom: 169px;
+    
+}
+.top-banner:hover .banner-link{
+    transform:scale(1.5) rotate(360deg);
+    transition: transform 1s;
+}
+.top-banner:hover .banner-image{
+    transform:scale(1.5);
+    transition: transform 3s;
+}
+.banner-link a{
+    width: 88px;
+    height: 24px;
+    padding:10px 24px ;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.banner-link .fa-arrow-right{
+    width: 16px;
+}
+.banner-image{
+    overflow: hidden;
+    margin-right: 140px;
+    margin-bottom: 86px;
+    margin-top: 153px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-banner .banner-image img{
+    width: 556px;
+    height: 438px;
+    
+}
+/* player list style */
+.player-container{
+    margin-bottom: 165px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 45px 30px;
+    margin-left: 180px;
+    margin-right: 210px;
+    
+}
+.player{
+    width: 300px;
+    height: 426px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px gray;
+}
+.player .player-pic img{
+    width: 300px;
+    height: 256px;
+}
+/* Club Style */
+.club-section{
+    margin-bottom: 162px;
+}
+.club-info{
+    color: rgba(128, 0, 0, 0.918);
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 65px;
+    margin-top: 0px;
+}
+.madrid-darby{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 10px;
+    margin-left: 180px;
+    margin-right: 210px;
+}
+.madrid-darby iframe{
+    width: 560px;
+    height: 350px;
+}
+.club-success{
+    font-size: 40px;
+    color: rgba(205, 0, 137, 0.733);
+}
+/* .history{
+    position: relative;
+} */
+
+.president-pro{
+    position: relative;
+    overflow: hidden;
+}
+.president-image{
+    overflow: hidden;
+}
+.history:hover .president-image{
+    transform: scale(1.5);
+    transition: transform 3s;
+}
+
+
+/* footer style */
+.footer-section{
+    margin-bottom: 16px;
+}
+.footer-logo{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 20px;
+}
+/* .footer-section{
+    margin-top: 162px;
+    margin-bottom: 59px;
+    margin-left: 437px;
+    margin-right: 519px;
+} */
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-image{
+    width: 483px;
+}
+.footer-icon.fab{
+    width: 17px;
+}
+.footer-logo p{
+    color: #000000;
+}
+/* media query for phone */
+@media only screen and (max-width:668px) {
+    .top-banner{
+        width: 100%;
+    }
+    .players,.top-banner,.footer-logo{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
 }
