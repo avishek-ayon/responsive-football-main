@@ -188,7 +188,6 @@
     .top-banner{
         text-align: center;
     }
- 
     .banner-image{
  
         width: 100%;
@@ -197,11 +196,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 500px;
     }
     .top-banner{
         grid-template-columns: repeat(1,1fr);
     }
-    .players,.footer-section{
+    .players,.footer-section,.club-section{
         grid-template-columns: repeat(1,1fr);
     }
     .player,.club-section{
@@ -209,7 +209,20 @@
     }
 }
 /* media query for ipad */
-@media only screen and (min-width:688px) and (max-width:992px)  {
+@media only screen and (min-width:688px) and (max-width:992px) {   
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+    }
+    .top-banner{
+        text-align: center;
+    }
+    .banner-image{
+
+        width: 100%;
+    }
     .player-container{
         width: 100%;
     }
