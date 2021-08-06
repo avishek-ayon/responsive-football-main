@@ -180,7 +180,17 @@
 /* media query for phone */
 @media only screen and (max-width:668px) {
     .container{
+        display: flex;
+        align-items: center;
         width: 100%;
+    }
+    .footer-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-banner{
+        grid-template-columns: repeat(1,1fr);
     }
     .players,.footer-section{
         grid-template-columns: repeat(1,1fr);
@@ -191,12 +201,25 @@
 }
 /* media query for ipad */
 @media only screen and (min-width:688px) and (max-width:992px)  {
-
-    .players,.footer-section{
+    .player-container{
+        width: 100%;
+    }
+    .footer-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .players{
         grid-template-columns: repeat(2,1fr);
+    }
+    .footer-section{
+        grid-template-columns: repeat(1,1fr);
     }
     .top-banner{
         grid-template-columns: repeat(1,1fr);
+    }
+    .club-section{
+        grid-template-columns: repeat(2,1fr);
     }
 
 }
